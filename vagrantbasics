@@ -1,0 +1,30 @@
+Vagrant is an application used to manage virtual machines. Vagrant provides a public catalog of operating system images for registered users and organizations.
+
+Definitions:
+  * Box - a box is an operating system image
+  * Project - Folder Containing a Vagrantfile
+  * Vagrantfile - 
+  
+Commands:
+  * vagrant add USER/BOX
+    USER = vagrant cloud user ID / BOX = vagrant user defined box
+    (vagrant add klblake/centos7)
+    
+    mkdir vm1 - creates a directory called vm1
+    cd vm1 - change directory to vm1
+    vagrant init USER/BOX
+    vagrant up - imports and starts the project in VirtualBox
+      if USER/BOX exists, vagrant will start the machine
+     vagrant ssh [VM_Name]
+     vagrant halt [VM_Name]
+     vagrant up [VM_Name]
+     vagrant suspend [VM]
+     vagrant resume [VM]
+     vagrant destroy [VM]
+     vagrant - lists options
+   
+      
+By default vagrant will run the box instance in headless mode
+The Vagrant init file can contain definitions for a multi-machine setup. (Insight - Super awesome for creating and maintaining multiple environments such as Development, UAT and Production setups)
+
+
