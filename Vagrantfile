@@ -20,3 +20,9 @@ end
   vb.gui = true
   vb.memory = "1024"
 end
+  
+  Add a provisioning line run a setup script to configure initialization of all machines defined in vagrantfile once running
+  config.vm.provision "shell", path: "setup.sh"
+  
+This only executed on the first "vagrant up" command
+  
